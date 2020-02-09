@@ -1,0 +1,39 @@
+.button {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #e5e9ef;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+
+    
+    width: 120px;
+    height: 40px;
+
+    &:hover {
+        background: linear-gradient(to right, #00a1f9, #008dfe);
+        border-radius: 4px;
+        border: 1px solid #0084ee;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    &:active {
+        transform: translateY(1px);
+        filter: saturate(150%);
+    }
+
+    &_submit {
+        margin-right: 24px;
+    }
+
+    // .button_disable
+
+    &_disable {
+        max-width: 190px;
+        margin-top: 24px;
+        background-color: darken(#e5e9ef, 7%);
+
+        width: 90%;
+    }
+}

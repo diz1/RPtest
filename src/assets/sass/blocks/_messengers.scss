@@ -1,0 +1,186 @@
+.messengers {
+    background-color: $white;
+    
+    // .messengers__inner
+        
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .messengers__item
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 20%;
+    }
+}
+
+.messenger {
+    // .messenegr__top
+
+    &__top {
+        margin-top: 25px;
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.09);
+        height: 52px;
+    }
+
+    // .messenger__bottom
+
+    &__bottom {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-radius: 0 0 4px 4px;
+
+        background-color: #eaeaee;
+
+        width: 99%;
+        height: 100%;
+
+        padding-bottom: 24px;
+        margin-bottom: 40px;
+    }
+    
+    // .messenger__icon
+
+    &__icon {
+        transform: translateY(-30px);
+    }
+
+    // .messenger__title
+
+    &__title {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        color: #2c2c2c;
+
+        margin: 8px 0 15px;
+        transform: translateY(-30px);
+
+        &_telegram:before {
+            display: inline-block;
+            margin-right: 5px;
+            content: "";
+            width: 9px;
+            height: 9px;
+            top: 10px;
+            left: 0;
+            background-color: $green;
+            border-radius: 50%;
+        }
+        
+        &_slack:before {
+            display: inline-block;
+            margin-right: 5px;
+            content: "";
+            width: 9px;
+            height: 9px;
+            top: 10px;
+            left: 0;
+            background-color: $green;
+            border-radius: 50%;
+        }
+    }
+
+}
+
+
+
+.checkbox {
+    display: none;
+
+
+    // .checkbox__label
+
+
+    &__label {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+
+    &__label:before {
+        display: inline-block;
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-image: url(../img/icons/chkbx_unchk.png);
+        background-repeat: no-repeat;
+
+        margin-right: 5px;
+    }
+
+
+    &:checked+.checkbox__label:before {
+        display: inline-block;
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-image: url(../img/icons/chkbx_chk.png);
+        background-repeat: no-repeat;
+    }
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    // .first__action
+
+    &__first {
+        margin-top: 34px;
+        margin-bottom: 14px;
+
+        align-items: center;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    // .second__action
+
+    &__second {
+        align-items: center;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    // .action__text
+
+    &__text {
+        max-width: 160px;
+        font-size: 13px;
+        font-weight: 400;
+        display: inline-block;
+    }
+
+    // .action__icon
+
+    &__icon {
+        background-image: url("../img/icons/action.png");
+        background-size: cover;
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+    }
+}

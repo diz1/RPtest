@@ -1,0 +1,37 @@
+// Font
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic-ext');
+
+// Vars
+@import "vars/reset";
+@import "vars/colors";
+
+// Default styles
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+
+    max-width: 1154px;
+    margin: auto;
+    background-color: $grey;
+
+    overflow: hidden;
+}
+
+a {
+    color: #2196f3;
+}
+
+::placeholder {
+    color: $phold;
+}
+
+
+// Blocks
+
+@import "blocks/container";
+@import "blocks/main";
+@import "blocks/form";
+@import "blocks/buttons";
+@import "blocks/warning";
+@import "blocks/messengers";

@@ -1,0 +1,30 @@
+.main {
+    background-color: $white;
+
+    // .main__inner
+
+    &__inner {
+
+    }
+
+    // .main__title
+
+    &__title {
+        font-size: 18px;
+        font-weight: 500;
+
+        color: #2c2c2c;
+        
+        padding-top: 104px;
+        margin-bottom: 16px;
+    }
+
+    // .main__description
+
+    &__description {
+        font-size: 14px;
+        font-weight: 400;
+
+        padding-bottom: 34px;
+    }
+}
